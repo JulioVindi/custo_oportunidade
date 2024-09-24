@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Rentabilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <img src="./Images/Logo_Vindi.png" class="header__logo" alt="Logo Vindi">
+    <h1 class="header__title">Calculadora - Custo de oportunidade</h1>
+</header>
+<main class="main">
+    <h2 class="main__subtitle">Custo Adicional Pix
+        <img src="./Images/Logo_pix.png" class="main__subtitle-image" alt="Logo Pix">
+    </h2>
+    <div class="main__master">
+    <div class="main__container">
+        <label for="date">Data:</label>
+        <input type="date" id="date" required>
+        
+        <label for="fator"><a href="https://calculadorarendafixa.com.br/#/navbar/calculadora" target="_blank">Fator:</a>
+        </label>
+        <input type="number" id="fator" step="0.01" required>
+
+        <label for="capitalMinimo">Capital Mínimo (R$):</label>
+        <input type="number" id="capitalMinimo" step="0.01" required>
+
+        <label for="pix">Quantidade de Pix:</label>
+        <input type="number" id="pix" required>
+
+        <label for="boleto">Quantidade de Boletos:</label>
+        <input type="number" id="boleto" required>
+    </div>
+    <img src="./Images/right-arrow.png" class="main__pass-img" alt="Seta para direita">
+    <div class="main__button-step1">
+    <img src="./Images/number-one.png" class="main__button-step-image" alt="Numero 2"><br>
+    <p class="main__button-step-p">Confira a rentabilidade</p>
+    <button class="btn main__button-calcular-rentabilidade" onclick="calcularRentabilidade()"><span>Calcular Rentabilidade</span></button>
+    <div class="result" id="resultado">
+        <span class="result__text">Resultado:</span></div>    
+    </div>
+    <img src="./Images/right-arrow.png" class="main__pass-img" alt="Seta para direita">
+<div class="main__button-step2">
+    <img src="./Images/number-2.png" class="main__button-step-image" alt="Numero 2"><br>
+    <p class="main__button-step-p">Exporte o CSV</p>
+    <button class="btn main__button-csv" onclick="exportarCSV()"><span>Exportar para CSV</span></button>
+</div>
+</div>
+</main>
+
+    <!-- Linkando o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

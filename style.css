@@ -1,0 +1,146 @@
+@import url(./Blocks/Header.css);
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 40px;
+}
+
+.main__subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__subtitle-image{
+    padding-left: 30px;
+    max-width: 100px;
+}
+
+.main__master{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 60px;
+    width: 1200px;
+}
+.main__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main__pass{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main__pass-img{
+    width: 7%;
+    display: flex;
+    align-self: center;
+    margin-bottom: 200px;
+}
+
+.main__button-step-image{
+    width: 30%;
+    align-self: center;
+    margin: 0;
+}
+
+.main__button-step-p{
+    align-self: center;
+    font-size: 10px;
+    margin-top: -10px;
+}
+
+.main__button-step1{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 0;
+    margin-bottom: 125px;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+    color: #011331;
+    border-radius: 5%;
+    align-self: center;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-size: 15px;
+    font-weight: bold
+  }
+
+  .result {
+    block-size: 80px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+
+.result__text{
+    font-size: 15px;
+    font-weight: bold
+}
+
+.main__button-step2{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 0;
+    margin-bottom: 125px;
+}
